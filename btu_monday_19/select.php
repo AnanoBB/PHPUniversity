@@ -5,8 +5,8 @@ require_once("db.php");
         
         
 
-    $sql ="SELECT `id`, `product_name`, `description`, `created_at` FROM `products`";
-      $result=$conn->query($sql);
+    $sql ="SELECT  `product_name`, `description` FROM `products`";
+    $result=$conn->query($sql);
       
 
       if($result->num_rows>0){
