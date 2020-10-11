@@ -18,7 +18,7 @@
 use Illuminate\Http\Request;
 
 Route::get("/formtosendpostmethod", function(){
-    return view('guest.form');
+    return view('guest.single');
 });
 
 Route::post("/testrequest", function(Request $request){
@@ -35,7 +35,5 @@ Route::post("/testrequest", function(Request $request){
 })->name("posttest");
 
 
-// Route::get('/parameter/{id}',function($id){
-//     return $id;
-// })->name('gettest');
+
 
